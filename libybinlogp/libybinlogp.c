@@ -13,6 +13,9 @@
  * Functions starting with ybpi_ are internal-only and should be static
  */
 
+#define _XOPEN_SOURCE 700
+#define _GNU_SOURCE
+
 #if HAVE_CONFIG_H
     #include <config.h>
 #endif
