@@ -14,7 +14,7 @@ debug: all
 all: $(TARGETS)
 
 ybinlogp: ybinlogp.o libybinlogp.so
-	gcc $(CFLAGS) $(LDFLAGS) -o $@ -lybinlogp $<
+	gcc $(CFLAGS) $(LDFLAGS) -o $@ $< -lybinlogp
 
 libybinlogp.so: libybinlogp.so.1
 	ln -fs $< $@
@@ -29,3 +29,8 @@ clean:
 	rm -f $(TARGETS) *.o
 
 ybinlogp.o: ybinlogp.c ybinlogp.h
+
+install: $(TARGETS)
+	install -d $(DESTDIR)/usr/bin $(DESTDIR)/usr/lib
+	install libybinlogp.so* $(DESTDIR)/usr/lib
+	install ybinlogp $(DESTDIR)/usr/bin

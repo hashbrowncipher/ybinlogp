@@ -11,6 +11,9 @@ build:
 debug:
 	make -C build debug
 
+install:
+	make -C build install
+
 flakes:
 	find -name "*.py" -print0 | xargs -0 pyflakes
 
@@ -24,4 +27,3 @@ tests: all
 clean:
 	make -C build clean
 	find . -iname '*.pyc' -delete
-
