@@ -1,3 +1,9 @@
+ybinlogp (0.6-yelp1) lucid; urgency=low
+
+  * Upsream release 0.6
+
+ -- Josh Snyder <josnyder@yelp.com>  Sat, 24 Jan 2015 10:29:09 -0800
+
 ybinlogp (0.3-yelp1) unstable; urgency=low
 
   * Upstream release 0.3
