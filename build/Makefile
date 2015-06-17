@@ -31,6 +31,7 @@ clean:
 ybinlogp.o: ybinlogp.c ybinlogp.h
 
 install: $(TARGETS)
-	install -d $(DESTDIR)/usr/bin $(DESTDIR)/usr/lib
+	install -d $(DESTDIR)/usr/bin $(DESTDIR)/usr/lib $(DESTDIR)/usr/lib/python2.7/dist-packages/ybinlogp
 	install libybinlogp.so* $(DESTDIR)/usr/lib
 	install ybinlogp $(DESTDIR)/usr/bin
+	install $(VPATH)/ybinlogp/*.py* $(DESTDIR)/usr/lib/python2.7/dist-packages/ybinlogp
