@@ -1,3 +1,7 @@
+0.7
+---
+* Fixed a bug that prevented the .py files from being deployed on trusty
+
 0.6
 ---
 * Fixed a bug that would cause an EmptyEventError if ybinlogp received an event

@@ -1,3 +1,9 @@
+ybinlogp (0.7-yelp1) lucid; urgency=low
+
+  * Upstream release 0.7
+
+ -- Matt Ullmer <meu@yelp.com>  Tue, 16 Jun 2015 14:24:00 -0800
+
 ybinlogp (0.6-yelp1) lucid; urgency=low
 
   * Upsream release 0.6
